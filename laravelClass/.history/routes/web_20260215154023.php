@@ -14,4 +14,3 @@ Route::get("register/user/{id}", function($id){
 });
 
 Route::get("user/record", [UserController::class, 'index']);
-Route::get("user/create", [UserController::class, 'create'])->name("user.create");
