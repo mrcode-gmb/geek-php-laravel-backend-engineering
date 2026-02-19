@@ -1,12 +1,3 @@
-<?php
-    class Index{
-
-    }
-
-?>
-
-
-
 
 
 

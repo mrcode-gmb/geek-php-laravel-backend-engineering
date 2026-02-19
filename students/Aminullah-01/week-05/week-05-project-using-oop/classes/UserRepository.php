@@ -36,7 +36,7 @@ class UserRepository {
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         if (!$row) return null;
 
-        // constructor must match User.php
+        
         return new User($row['fullName'], $row['username'], $row['email'], $row['password']);
     }
 

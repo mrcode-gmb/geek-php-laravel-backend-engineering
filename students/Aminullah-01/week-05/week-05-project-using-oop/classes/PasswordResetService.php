@@ -1,11 +1,5 @@
 <?php
-require "config.php";
-require_once "classes/User.php";
-require_once "classes/UserRepository.php";
-require_once "classes/PasswordResetService.php";
 
-$userRepo = new UserRepository($pdo);
-$resetService = new PasswordResetService($userRepo);
 
 
 
