@@ -1,0 +1,13 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', function () {
+    return view("welcome");
+});
+
+
+Route::get("register/user/{id}", function($id){
+    $user = ['']
+    return view("user.resgister", compact("id"));
+});
