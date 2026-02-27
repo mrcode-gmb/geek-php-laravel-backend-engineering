@@ -36,14 +36,10 @@ class UserController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store( $t): string
     {
-        $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|email|unique:users,email',
-        ]);
         //
-        return $request;
+        return "Comfirm work";
     }
 
     /**

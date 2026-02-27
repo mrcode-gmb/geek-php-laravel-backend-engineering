@@ -10,7 +10,7 @@
         @csrf
         <input type="text" name="name" placeholder="Your name">
         {{ $errors->first("name") }}
-        <input type="text" name="email" placeholder="Your email">
+        <input type="email" name="text" placeholder="Your email">
         {{ $errors->first("email") }}
         <textarea name="message" placeholder="Message"></textarea>
         <button type="submit">Send</button>

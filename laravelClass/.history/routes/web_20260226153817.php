@@ -10,7 +10,7 @@ Route::get("register/user/{id}", function($id){
 });
 
 Route::get("user/record", [UserController::class, 'index']);
-Route::post("user/record/store", [UserController::class, 'store'])->name("user.store");
+Route::get("user/record/store", [UserController::class, 'store'])->name("user.store");
 Route::get("user/create", [UserController::class, 'create'])->name("user.create");
 
 
